@@ -25,6 +25,12 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'guests', views.GuestsViewSet)
+router.register(r'groupsguests', views.GroupsViewSet)
+router.register(r'groupmessages', views.GroupMsgViewSet)
+router.register(r'individualmessages', views.IndividualMsgViewSet)
+router.register(r'confirmed', views.ConfirmedMsgViewSet)
+router.register(r'appversions', views.AppVersionViewSet)
+router.register(r'pushtoken', views.PushTokenViewSet)
 
 urlpatterns = [
     path('weddApp/', include('weddApp.urls')),
